@@ -9,7 +9,8 @@ package com.flying.xiaomi;
  *
  *  token机制实现步骤:
  *      1. 生成全局唯一的token,token放到redis或jvm内存,token会在页面跳转时获取.存放到pageScope中,支付请求提交先获取token
- *      2. 提交后后台校验token，执行提交逻辑,提交成功同时删除token，生成新的token更新redis ,这样当第一次提交后token更新了,页面再次提交携带的token是已删除的token后台验证会失败不让提交
+ *      2. 提交后后台校验token，执行提交逻辑,提交成功同时删除token，生成新的token更新redis ,
+ *          这样当第一次提交后token更新了,页面再次提交携带的token是已删除的token后台验证会失败不让提交
  *      token特点：   要申请，一次有效性，可以限流
  *      注意： redis要用删除操作来判断token，删除成功代表token校验通过，如果用select+delete来校验token，存在并发问题，不建议使用
  */
