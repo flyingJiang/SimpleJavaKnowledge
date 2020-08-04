@@ -27,6 +27,11 @@ import java.util.concurrent.ConcurrentHashMap;
  *
  * HashMap 的长度为什么是2的幂次方
  * 为了能让 HashMap 存取高效，尽量较少碰撞，也就是要尽量把数据分配均匀，每个链表/红黑树长度大致相同。这个实现就是把数据存到哪个链表/红黑树中的算法。
+ *
+ *
+ static final float DEFAULT_LOAD_FACTOR = 0.75f;
+ 问题：如果给定初始化hashmap大小为50，那么初始化要多大
+ 答：50/0.75~=68----128，需要考虑负载因子
  */
 public class MapUtils {
     public static void main(String[] args) {
