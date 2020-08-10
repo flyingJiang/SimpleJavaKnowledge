@@ -38,6 +38,18 @@ import java.util.Map;
         *著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
 public class LRUCache {
+    public static void main(String[] args) {
+        LRUCache1 cache = new LRUCache1( 2);
+        cache.put(1,1);
+        cache.put(2,2);
+        cache.get(1);       // 返回  1
+        cache.put(3,3);    // 该操作会使得关键字 2 作废
+        cache.get(2);       // 返回 -1 (未找到)
+        cache.put(4,4);    // 该操作会使得关键字 1 作废
+        cache.get(1);       // 返回 -1 (未找到)
+        cache.get(3);       // 返回  3
+        cache.get(4);       // 返回  4
+    }
 }
 class LRUCache1 {
     int capacity;
