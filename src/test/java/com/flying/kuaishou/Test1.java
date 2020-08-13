@@ -4,6 +4,26 @@ import java.util.List;
 
 import org.junit.Test;
 
+/**
+ * 1. List[] p=new List[10]; 能否编译通过
+ * 2. List<String>[] p=new List<String>[10]; 能否编译通过
+ *
+ * 3.某文件多列，tab隔开，统计第三列单词，按照单词出现的次数，做倒序展示，并同时展示次数
+ * 4.
+ * @ControllerAdvice 是否可以捕获 servlet 里面 filter的异常
+ * maven解决版本冲突
+ * MySQL非聚集索引的叶子节点存储什么
+ *
+ * 泛型
+ *
+ * SpringMVC
+ *
+ * Linux
+ *
+ * jvm调优
+ *
+ * SQL节点的存储结构
+ */
 public class Test1 {
     @Test
     public void m1(){
