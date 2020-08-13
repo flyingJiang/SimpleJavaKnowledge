@@ -31,3 +31,10 @@ package com.flying.com.didi;
  */
 public class Main {
 }
+/***
+ * Spring事务传播机制
+ * JVM什么时候回收直接引用
+ * TCP连接的TIME_WAIT和CLOSE_WAIT 状态解说
+ * 线程池的实现原理
+ * Spring原理
+ */

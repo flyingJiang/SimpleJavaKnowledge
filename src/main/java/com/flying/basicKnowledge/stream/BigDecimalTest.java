@@ -14,7 +14,7 @@ public class BigDecimalTest {
             instalment.setValueInstalment(BigDecimal.valueOf(50.09));
             instalment.setValueInstalmentRatio(BigDecimal.valueOf(45.08));
             instalment.setNumInstalment(Long.valueOf(i));
-            instalmentFilterList.add(instalment);
+//            instalmentFilterList.add(instalment);
         }
         ContractInstalmentCalculationEvent event = new ContractInstalmentCalculationEvent();
         BigDecimal ratio = BigDecimal.valueOf(0.9);
