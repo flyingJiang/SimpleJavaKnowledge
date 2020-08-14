@@ -34,3 +34,26 @@ public class basic {
 
     }
 }
+
+class TestInteger {
+    public static void main(String[] args) {
+        Integer a = Integer.valueOf(1);
+        if (a == 1){
+            System.out.println("相等");
+        } else {
+            System.out.println("不相等");
+        }
+
+        Integer b = new Integer("1280");
+        if (b == 1280){
+            System.out.println("相等");
+        } else {
+            System.out.println("不相等");
+        }
+        if (b == 1280){
+            System.out.println("相等");
+        } else {
+            System.out.println("不相等");
+        }
+    }
+}
