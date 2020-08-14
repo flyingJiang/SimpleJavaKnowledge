@@ -34,6 +34,7 @@ public class Test1 {
 //        List<String>[] p1 = new List<String>[10];
         List<?> [] l = new List<?>[10];
         List<String>[] p1 = new List[10];
+        List<String>[] p2 = new List[10];
 
         //泛型的类型参数只能是类类型（包括自定义类），不能是简单类型
 //传入的实参类型需与泛型的类型参数类型相同，即为Integer.
