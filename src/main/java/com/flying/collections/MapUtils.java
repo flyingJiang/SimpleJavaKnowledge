@@ -6,32 +6,32 @@ import java.util.TreeMap;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
- *  https://www.cnblogs.com/chenpt/p/9431602.html
+ * https://www.cnblogs.com/chenpt/p/9431602.html
  * 数组+链表的方式，
- *
- static final int DEFAULT_INITIAL_CAPACITY = 1 << 4; // aka 16
- *
- static final int TREEIFY_THRESHOLD = 8;
+ * <p>
+ * static final int DEFAULT_INITIAL_CAPACITY = 1 << 4; // aka 16
+ * <p>
+ * static final int TREEIFY_THRESHOLD = 8;
  * jdk1.8后在解决哈希冲突时有了较大的变化，当链表长度大于阈值（默认为8）时，将链表转化为红黑树，以减少搜索时间。
- *
- static final int UNTREEIFY_THRESHOLD = 6;
+ * <p>
+ * static final int UNTREEIFY_THRESHOLD = 6;
  * hash桶中存放的链表长度概率  随着长度的增加而减小
  * 节点的分布频率会遵循泊松分布，链表长度达到8个元素的概率为0.00000006，几乎是不可能事件.
  * 　为什么转化为红黑树的阈值8和转化为链表的阈值6不一样，是为了避免频繁来回转化。
- *
- static final int MIN_TREEIFY_CAPACITY = 64;
- if (tab == null || (n = tab.length) < MIN_TREEIFY_CAPACITY)
+ * <p>
+ * static final int MIN_TREEIFY_CAPACITY = 64;
+ * if (tab == null || (n = tab.length) < MIN_TREEIFY_CAPACITY)
  * 实际上转换红黑树有个大前提,就是当前hash table的长度也就是HashMap的capacity(不是size)不能小于64.小于64就只是做个扩容.
- *
+ * <p>
  * return (key == null) ? 0 : (h = key.hashCode()) ^ (h >>> 16);
- *
+ * <p>
  * HashMap 的长度为什么是2的幂次方
  * 为了能让 HashMap 存取高效，尽量较少碰撞，也就是要尽量把数据分配均匀，每个链表/红黑树长度大致相同。这个实现就是把数据存到哪个链表/红黑树中的算法。
- *
- *
- static final float DEFAULT_LOAD_FACTOR = 0.75f;
- 问题：如果给定初始化hashmap大小为50，那么初始化要多大
- 答：50/0.75~=68----128，需要考虑负载因子
+ * <p>
+ * <p>
+ * static final float DEFAULT_LOAD_FACTOR = 0.75f;
+ * 问题：如果给定初始化hashmap大小为50，那么初始化要多大
+ * 答：50/0.75~=68----128，需要考虑负载因子
  */
 public class MapUtils {
     public static void main(String[] args) {
@@ -54,7 +54,7 @@ public class MapUtils {
         //对于在Map中插入、删除和定位元素这类操作，HashMap是最好的选择。
         // 然而，假如你需要对一个有序的key集合进行遍历，TreeMap是更好的选择。
         //基于你的collection的大小，也许向HashMap中添加元素会更快，将map换为TreeMap进行有序key的遍历。
-        TreeMap<String,String> treeMap = new TreeMap<>();
+        TreeMap<String, String> treeMap = new TreeMap<>();
 
         //HashTable： 数组+链表组成的，数组是 HashMap 的主体，链表则是主要为了解决哈希冲突而存在的
         // HashMap 是非线程安全的，HashTable 是线程安全的；HashTable 内部的方法基本都经过 synchronized 修饰。（如果你要保证线程安全的话就使用 ConcurrentHashMap 吧！）
@@ -76,3 +76,17 @@ public class MapUtils {
 
     }
 }
+
+/**
+ * https://blog.csdn.net/horero/article/details/53737576
+ * <p>
+ * 1.语法上面的区别：
+ * 1）HashMap允许键值为空，Hashtable不允许。
+ * 2）HashMap包含了containsvalue和containsKey，不包含有contains。
+ * 2.安全方面的区别
+ * HashTable支持线程安全的，而HashMap不支持线程同步，是非线程安全的。因此，HashMap相对来说效率可能会高于Hashtable。
+ * 3.源码级别的区别
+ * Hashtable，hash数组默认的大小是11，增加的方式是old*2+1,而HashMap中，hash数组的默认大小是16，而且一定是2的指数。
+ * 相较于HashMap和HashTable，TreeMap是利用红黑树来实现的，实现了SortMap接口，能够对保存的记录根据键进行排序。所以一般需要排序的情况下是选择TreeMap来进行。
+ */
+class MapTable {}

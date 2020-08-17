@@ -1,6 +1,10 @@
 package com.flying.redis.ditributedLock;
 
 /**
+ * https://www.cnblogs.com/mengchunchen/p/9647756.html
+ * https://blog.csdn.net/jiayoubing/article/details/105296841
+ *
+ *
  * Redis实现分布式锁
  * 　　1.根据lockKey区进行setnx（set not exist，如果key值为空，则正常设置，返回1，否则不会进行设置并返回0）操作，如果设置成功，表示已经获得锁，否则并没有获取锁。
  * <p>
@@ -43,3 +47,20 @@ class ZookeeperLock {
  * 　　另外一点就是，如果是redis获取锁的那个客户端bug了或者挂了，那么只能等待超时时间之后才能释放锁；
  * 而zk的话，因为创建的是临时znode，只要客户端挂了，znode就没了，此时就自动释放锁
  */
+
+/****
+ * https://www.cnblogs.com/rgcLOVEyaya/p/RGC_LOVE_YAYA_1003days.html
+ * 1.TTL时长 要大于正常业务执行的时间+获取所有redis服务消耗时间+时钟漂移
+ *
+ * 2.获取redis所有服务消耗时间要 远小于TTL时间，并且获取成功的锁个数要 在总数的一般以上:N/2+1
+ *
+ * 3.尝试获取每个redis实例锁时的时间要 远小于TTL时间
+ *
+ * 4.尝试获取所有锁失败后 重新尝试一定要有一定次数限制
+ *
+ * 5.在redis崩溃后（无论一个还是所有），要延迟TTL时间重启redis
+ *
+ * 6.在实现多redis节点时要结合单节点分布式锁算法 共同实现
+ *
+ */
+
