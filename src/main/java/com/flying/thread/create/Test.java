@@ -1,11 +1,17 @@
 package com.flying.thread.create;
 
+import java.math.BigDecimal;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Executor;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.concurrent.ForkJoinPool;
+import java.util.concurrent.ForkJoinTask;
 import java.util.concurrent.FutureTask;
+import java.util.stream.Collectors;
 
 /**
  * https://www.cnblogs.com/zhou-test/p/9811771.html
@@ -97,5 +103,23 @@ class MyCallable implements Callable<Integer> {
             sum += i;
         }
         return sum;
+    }
+}
+
+class TestForkJoinPool {
+    private static ForkJoinPool fork;
+    public static void main(String[] args) {
+        List<BigDecimal> list = new ArrayList<>();
+        list.add(BigDecimal.valueOf(1));
+        list.add(BigDecimal.valueOf(1));
+        list.add(BigDecimal.valueOf(1));
+        list.add(BigDecimal.valueOf(1));
+        list.add(BigDecimal.valueOf(1));
+        List<ForkJoinTask<?>> forkJoinTasks = list.stream().map(x->fork.submit(()->test(list))).collect(Collectors.toList());
+        forkJoinTasks.forEach(ForkJoinTask::join);
+        list.clear();
+    }
+    private static void test(List<BigDecimal> list){
+        System.out.println(1);
     }
 }
