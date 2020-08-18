@@ -11,6 +11,10 @@ public class TestBigDecimal {
         if (a.equals(BigDecimal.ZERO)){
 
         }
+        BigDecimal b = null;
+        if (b.equals(BigDecimal.ZERO)){
+
+        }
 
     }
 }
