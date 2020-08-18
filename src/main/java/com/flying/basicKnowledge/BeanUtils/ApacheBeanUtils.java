@@ -2,7 +2,7 @@ package com.flying.basicKnowledge.BeanUtils;
 
 import java.lang.reflect.InvocationTargetException;
 
-import org.apache.commons.beanutils.BeanUtils;
+//import org.apache.commons.beanutils.BeanUtils;
 
 /**
  *
@@ -25,7 +25,7 @@ public class ApacheBeanUtils {
         PersonSource personSource = new PersonSource(1, "pjmike", "12345", 21);
         System.out.println("personSource: "+personSource);
         PersonDest personDest = new PersonDest();
-        BeanUtils.copyProperties(personDest,personSource);
+//        BeanUtils.copyProperties(personDest,personSource);
         System.out.println("persondest: "+personDest);
     }
 }
