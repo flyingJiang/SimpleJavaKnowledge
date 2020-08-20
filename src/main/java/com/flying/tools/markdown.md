@@ -61,11 +61,17 @@
     代码：
     ![我的图片](https://github.com/flyingJiang/SimpleJavaKnowledge/tree/master/src/main/resources/static/001.jpeg)
 
+![我的图片](https://github.com/flyingJiang/SimpleJavaKnowledge/tree/master/src/main/resources/static/001.jpeg)
+
 ### 参数式
     代码：
     [我的logo]: https://github.com/flyingJiang/SimpleJavaKnowledge/tree/master/src/main/resources/static/001.jpeg
 
     这是参数式的引用![我的logo]
+
+[我的logo]: /static/001.jpeg
+
+这是参数式的引用![我的logo]
 
 ## 代码块
 ### 单行代码块
