@@ -59,11 +59,11 @@
 
 ### 行内式
     代码：
-    ![我的图片](https://github.com/flyingJiang/SimpleJavaKnowledge/tree/master/src/main/resources/static/001.jpeg "我的开源中国博客logo")
+    ![我的图片](https://github.com/flyingJiang/SimpleJavaKnowledge/tree/master/src/main/resources/static/001.jpeg)
 
 ### 参数式
     代码：
-    [我的logo]: https://github.com/flyingJiang/SimpleJavaKnowledge/tree/master/src/main/resources/static/001.jpeg "我的开源中国博客logo"
+    [我的logo]: https://github.com/flyingJiang/SimpleJavaKnowledge/tree/master/src/main/resources/static/001.jpeg
 
     这是参数式的引用![我的logo]
 
