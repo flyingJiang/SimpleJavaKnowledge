@@ -1,4 +1,4 @@
-package com.flying.sort;
+package com.flying.algorithm.sort;
 
 public class QuickSort {
     private static int[] quickSort(int[] arr, int left, int right){

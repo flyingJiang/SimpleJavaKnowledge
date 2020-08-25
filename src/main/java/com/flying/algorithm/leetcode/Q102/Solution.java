@@ -1,9 +1,8 @@
-package com.flying.leetcode.Q102;
+package com.flying.algorithm.leetcode.Q102;
 
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
-import java.util.Stack;
 
 /**
  * 102. 二叉树的层序遍历

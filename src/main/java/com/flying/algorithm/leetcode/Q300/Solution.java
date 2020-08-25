@@ -1,4 +1,4 @@
-package com.flying.leetcode.Q300;
+package com.flying.algorithm.leetcode.Q300;
 
 import java.util.Arrays;
 

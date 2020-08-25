@@ -1,4 +1,4 @@
-package com.flying.jianzhioffer.q1;
+package com.flying.algorithm.jianzhioffer.q1;
 
 /**
  * 矩形覆盖

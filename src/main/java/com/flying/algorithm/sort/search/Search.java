@@ -1,4 +1,4 @@
-package com.flying.sort.search;
+package com.flying.algorithm.sort.search;
 
 public class Search {
     public static void main(String[] args) {

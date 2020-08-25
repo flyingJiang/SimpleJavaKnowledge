@@ -1,4 +1,4 @@
-package com.flying.sort;
+package com.flying.algorithm.sort;
 
 public class SelectSort {
 

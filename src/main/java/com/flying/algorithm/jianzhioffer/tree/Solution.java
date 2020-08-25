@@ -1,4 +1,4 @@
-package com.flying.jianzhioffer.tree;
+package com.flying.algorithm.jianzhioffer.tree;
 /**
  * Definition for a binary tree node.
  * public class TreeNode {

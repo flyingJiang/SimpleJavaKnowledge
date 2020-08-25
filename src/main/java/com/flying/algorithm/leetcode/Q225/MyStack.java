@@ -1,4 +1,4 @@
-package com.flying.leetcode.Q225;
+package com.flying.algorithm.leetcode.Q225;
 
 import java.util.LinkedList;
 import java.util.Queue;

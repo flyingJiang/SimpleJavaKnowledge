@@ -1,8 +1,4 @@
-package com.flying.leetcode.Q111;
-
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Stack;
+package com.flying.algorithm.leetcode.Q111;
 
 /**
  * 111. 二叉树的最小深度

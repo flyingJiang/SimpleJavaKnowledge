@@ -1,4 +1,4 @@
-package com.flying.leetcode.Q144;
+package com.flying.algorithm.leetcode.Q144;
 
 import java.util.LinkedList;
 import java.util.List;

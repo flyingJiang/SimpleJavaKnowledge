@@ -1,4 +1,4 @@
-package com.flying.leetcode.Q146;
+package com.flying.algorithm.leetcode.Q146;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
