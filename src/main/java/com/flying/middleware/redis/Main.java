@@ -1,4 +1,4 @@
-package com.flying.redis;
+package com.flying.middleware.redis;
 
 /**
  ***** 为什么redis单线程，但效率很高？

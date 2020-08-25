@@ -1,4 +1,4 @@
-package com.flying.redis.ditributedLock;
+package com.flying.middleware.redis.ditributedLock;
 
 /**
  * https://www.cnblogs.com/mengchunchen/p/9647756.html
