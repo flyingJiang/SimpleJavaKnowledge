@@ -1,4 +1,4 @@
-package com.flying.maven;
+package com.flying.tools.maven;
 
 /**
  * 打开 Terminal 控制台，在当前项目（pom文件）路径下输入命令：

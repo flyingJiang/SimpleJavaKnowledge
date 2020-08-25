@@ -6,7 +6,7 @@ public class Client {
         System.getProperties().put("sun.misc.ProxyGenerator.saveGeneratedFiles", "true");
 
         // jdk动态代理测试
-        Subject subject = new JDKDynamicProxy(new RealSubject()).getProxy();
-        subject.doSth();
+//        Subject subject = new JDKDynamicProxy(new RealSubject()).getProxy();
+//        subject.doSth();
     }
 }

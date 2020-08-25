@@ -2,6 +2,7 @@ package com.flying.collections;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Stack;
@@ -27,5 +28,25 @@ public class ListUtils {
         //Vector： Object数组
         // 线程安全：Vector 使用了 Synchronized 来实现线程同步，是线程安全的，而 ArrayList 是非线程安全的。
         Vector<String> vector = new Vector<>();
+    }
+
+    public void iteratorCase(List<String> list) {
+        // 1
+        for (int i=0; i<list.size();i++){
+
+        }
+        // 2
+        for (String s:list){
+
+        }
+        // 3
+        list.forEach(s -> {
+
+        });
+        // 4
+        Iterator<String> iterator = list.iterator();
+        while (iterator.hasNext()){
+
+        }
     }
 }

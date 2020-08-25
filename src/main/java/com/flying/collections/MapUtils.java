@@ -2,6 +2,8 @@ package com.flying.collections;
 
 import java.util.HashMap;
 import java.util.Hashtable;
+import java.util.Iterator;
+import java.util.Map;
 import java.util.TreeMap;
 import java.util.concurrent.ConcurrentHashMap;
 
@@ -73,6 +75,23 @@ public class MapUtils {
         //在JDK1.8中，放弃了Segment臃肿的设计，取而代之的是采用Node + CAS + Synchronized来保证并发安全进行实现，
         // synchronized只锁定当前链表或红黑二叉树的首节点，这样只要hash不冲突，就不会产生并发，效率又提升N倍。
         ConcurrentHashMap<String, String> concurrentHashMap = new ConcurrentHashMap<>();
+
+    }
+
+    public void mapUtil(Map<Integer, Integer> map){
+        for (Integer key:map.keySet()){
+
+        }
+        for (Integer v : map.values()){
+
+        }
+        for (Map.Entry<Integer, Integer> entry: map.entrySet()){
+
+        }
+        Iterator<Map.Entry<Integer, Integer>> iterator = map.entrySet().iterator();
+        while (iterator.hasNext()){
+            Map.Entry<Integer, Integer> entry = iterator.next();
+        }
 
     }
 }
