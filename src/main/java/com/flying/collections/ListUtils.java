@@ -18,6 +18,7 @@ public class ListUtils {
     public static void main(String[] args) {
         //Arraylist： Object数组
         // ArrayList 比较适合顺序添加、随机访问的场景。
+        // private static final int DEFAULT_CAPACITY = 10;
         List<String> arrayList = new ArrayList<>();
         //ArrayList 不是线程安全的，如果遇到多线程场景，可以通过 Collections 的 synchronizedList 方法将其转换成线程安全的容器后再使用
         List<String> arrayList1 = Collections.synchronizedList(arrayList);

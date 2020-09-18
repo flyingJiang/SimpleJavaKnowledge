@@ -5,6 +5,7 @@ import java.time.Instant;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.concurrent.ForkJoinPool;
 import java.util.concurrent.FutureTask;
 
 public class Pool {
@@ -12,6 +13,8 @@ public class Pool {
         Instant start = Instant.now();
 
         ExecutorService executor = Executors.newCachedThreadPool();
+        Executors.newWorkStealingPool();
+        //ForkJoinPool newWorkStealingPool
         //使用FutureTask包装callbale任务，再交给线程池执行
         FutureTask<Integer> futureTask = new FutureTask<>(() -> {
             System.out.println("子线程在进行计算");
