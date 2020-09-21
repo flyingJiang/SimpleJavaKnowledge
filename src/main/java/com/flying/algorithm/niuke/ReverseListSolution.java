@@ -14,7 +14,7 @@ public class ReverseListSolution {
         }
         //head为当前节点，如果当前节点为空的话，那就什么也不做，直接返回null；
         ListNode pre = null;
-        ListNode next = null;
+        ListNode next;
         //当前节点是head，pre为当前节点的前一节点，next为当前节点的下一节点
         //需要pre和next的目的是让当前节点从pre->head->next1->next2变成pre<-head next1->next2
         //即pre让节点可以反转所指方向，但反转之后如果不用next节点保存next1节点的话，此单链表就此断开了
