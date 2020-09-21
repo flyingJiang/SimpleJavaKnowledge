@@ -4,6 +4,7 @@ package com.flying.algorithm.niuke;
  * 输入一个链表，反转链表后，输出新链表的表头。
  * https://www.nowcoder.com/practice/75e878df47f24fdc9dc3e400ec6058ca?tpId=191&&tqId=35234&rp=1&ru=/activity/oj&qru=/ta/job-code-high-algorithm/question-ranking
  *
+ * @author Administrator
  */
 public class ReverseListSolution {
     public ListNode ReverseList(ListNode head) {
