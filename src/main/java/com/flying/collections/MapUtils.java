@@ -34,6 +34,7 @@ import java.util.concurrent.ConcurrentHashMap;
  * static final float DEFAULT_LOAD_FACTOR = 0.75f;
  * 问题：如果给定初始化hashmap大小为50，那么初始化要多大
  * 答：50/0.75~=68----128，需要考虑负载因子
+ * @author Flying.Jiang
  */
 public class MapUtils {
     public static void main(String[] args) {
