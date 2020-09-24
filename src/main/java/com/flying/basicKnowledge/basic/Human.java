@@ -1,4 +1,4 @@
-package com.flying.basicKnowledge;
+package com.flying.basicKnowledge.basic;
 
 
 class Annoyance extends Exception {}
