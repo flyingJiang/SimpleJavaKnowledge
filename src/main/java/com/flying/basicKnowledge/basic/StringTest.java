@@ -5,5 +5,8 @@ public class StringTest {
         String s = "2";
         StringBuffer stringBuffer = new StringBuffer();
         StringBuilder stringBuilder = new StringBuilder();
+        int[] a = new int[10];
+        int len = a.length;
+        int lenstr = s.length();
     }
 }
