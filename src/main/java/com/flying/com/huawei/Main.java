@@ -1,3 +1,5 @@
+package com.flying.com.huawei;
+
 public class Main {
     //15 P7
     public static void main(String[] args) {
