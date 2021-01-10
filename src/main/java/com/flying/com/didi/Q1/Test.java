@@ -35,10 +35,10 @@ class Student extends Person{
         super(name);
         this.name = name1;
     }
-//    public Student(String name ) {
-//        super(name);
-//        this.name = name;
-//    }
+    public Student(String name ) {
+        super(name);
+        this.name = name;
+    }
 
     public void getInfo(){
         System.out.println(this.name);      //Child
@@ -50,9 +50,9 @@ public class Test {
 
     public static void main(String[] args) {
         Student s1 = new Student("Father","Child");
-//        Student s2 = new Student("Father");
+        Student s2 = new Student("Father");
         s1.getInfo();
-//        s2.getInfo();
+        s2.getInfo();
 
     }
 
