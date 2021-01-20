@@ -1,0 +1,18 @@
+https://job.bytedance.com/referral/pc/position/detail/6753516942679607565?token=MzsxNTk1MDExMDc3MTU4OzY3MzEyNDgzMTUyODkxNDI3OTg7MA
+Java开发工程师-财务报表平台HOT
+Beijing
+R&D - Backend
+Experienced
+Responsibilities
+1、负责财务报表平台java后端服务开发与维护;
+2、负责高质量的设计和编码；承担重点、难点的技术攻坚；
+3、参与系统架构设计、技术选型、开发任务分解、工作量评估；
+4、分析解决系统性能问题，提升系统稳定性、伸缩性、扩展性。
+Qualifications
+1、计算机及其相关专业，统招本科及其以上学历，3年以上的研发经验；
+2、扎实的Java基础，精通Java EE、数据库、缓存、消息队列、索引等技术；
+3、精通Spring、MyBatis、Redis、MySQL、MongoDB、ES或Solr，熟悉NoSQL；
+4、熟悉分布式架构原理，精通微服务架构设计，熟悉Spring Cloud、Dubbo、Zookeeper等原理；
+5、精通Linux常用命令，网络协议，JVM、Tomcat、Nginx等调优；
+6、熟悉SAAS化架构，有SAAS服务系统开发经验者优先；
+7、有企业运营管理类ERP复杂业务系统搭建、财务领域、共享中心方面经验者优先。
