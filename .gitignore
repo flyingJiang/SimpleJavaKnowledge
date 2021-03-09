@@ -3,6 +3,7 @@
 *.iml
 out
 gen
+/target
 ### Java template
 # Compiled class file
 *.class
