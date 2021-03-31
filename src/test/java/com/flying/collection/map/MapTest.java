@@ -48,6 +48,12 @@ public class MapTest {
         }
     }
 
+    @Test
+    public void caseBoolean(){
+        Boolean a = null;
+        System.out.println(a.toString());
+    }
+
     private void print(final String key, final String value) {
         System.out.println(key + "," + value);
     }
