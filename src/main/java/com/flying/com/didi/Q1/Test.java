@@ -47,13 +47,10 @@ class Student extends Person{
 
 }
 public class Test {
-
     public static void main(String[] args) {
         Student s1 = new Student("Father","Child");
         Student s2 = new Student("Father");
         s1.getInfo();
         s2.getInfo();
-
     }
-
 }

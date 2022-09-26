@@ -5,10 +5,10 @@ package com.flying.com.didi.Q2;
  */
 public class Test {
     public static void main(String[] args) {
-//        int i = 10;
-//        int j = 5;
-        Integer i = 10;
-        Integer j = 5;
+        int i = 10;
+        int j = 5;
+//        Integer i = 10;
+//        Integer j = 5;
         Test test = new Test();
         System.out.println("i:" + i + " j:" + j);
         test.doSwap(i, j);
@@ -20,3 +20,4 @@ public class Test {
         b = temp;
     }
 }
+

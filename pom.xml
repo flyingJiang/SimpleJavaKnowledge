@@ -96,6 +96,13 @@
         <!--            <artifactId>mysql-connector-java</artifactId>-->
         <!--            <scope>runtime</scope>-->
         <!--        </dependency>-->
+        <!-- https://mvnrepository.com/artifact/cn.hutool/hutool-core -->
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-core</artifactId>
+            <version>5.7.16</version>
+        </dependency>
+
 
 
     </dependencies>

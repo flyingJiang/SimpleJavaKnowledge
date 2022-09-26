@@ -13,7 +13,7 @@ class Test1 {
     Test2 test2 = new Test2();
     public void test() {
         try {
-            test2.show();
+//            test2.show();
         } catch (Exception e) {
             e.getStackTrace();
         }
@@ -23,11 +23,13 @@ class Test1 {
 class Test2 {
     public Test2() {
     }
-    public void show() {
+    public void show() throws Throwable {
         try {
-            throw new Exception();
+            int a = 0;
+            int b =1;
+            int c = b/a;
         } catch (Exception e) {
-//            throw new Throwable();
+            throw new Throwable(e);
         }
     }
 }
